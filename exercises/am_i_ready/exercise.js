@@ -115,7 +115,7 @@ function checkGcc (pass, callback) {
     }
 
     var versionMatch = stderr.toString().split('\n').filter(Boolean).pop()
-          .match(/gcc version (\d+\.\d+\.\d+) /)
+          .match(/gcc versio?ó?n (\d+\.\d+\.\d+) /)
       , versionString
 
     if (versionMatch) {
